@@ -2148,9 +2148,9 @@ Model Fitness</h3>
 ## LP_HLM1     1  3 9699.863 9719.293 -4846.931                        
 ## LP_HLM2     2  4 9598.486 9624.392 -4795.243 1 vs 2 103.3773  &lt;.0001</code></pre>
 </div>
-<div id="additional-group-mean-center" class="section level3" number="2.1.4">
-<h3><span class="header-section-number">2.1.4</span> Additional: Group
-Mean Center</h3>
+<div id="additional-hlm-using-group-mean-center" class="section level3" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> Additional: HLM
+using Group Mean Center</h3>
 <div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>LP_HLM2gmc <span class="ot">&lt;-</span> <span class="fu">lme</span>(lpeffectiveness <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> gmc_memberexclusivity,</span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">random =</span> <span class="sc">~</span> <span class="dv">1</span> <span class="sc">|</span> LP, <span class="at">data=</span>data, <span class="at">method=</span><span class="st">&quot;ML&quot;</span>)</span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">summary</span>(LP_HLM2gmc))</span></code></pre></div>
